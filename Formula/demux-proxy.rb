@@ -5,28 +5,28 @@
 class DemuxProxy < Formula
   desc "Proxy that takes a single input and then switches it to any one of a number of interfaces"
   homepage "https://github.com/mberwanger/demux-proxy"
-  version "0.1.0"
+  version "0.2.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/mberwanger/demux-proxy/releases/download/v0.1.0/demux-proxy_0.1.0_Darwin_x86_64.tar.gz"
-    sha256 "4e9a726e96e9fb5d7cb63679614cb4efec9662aac1767ce0a860fe03b04ff40f"
+    url "https://github.com/mberwanger/demux-proxy/releases/download/v0.2.0/demux-proxy_0.2.0_Darwin_x86_64.tar.gz"
+    sha256 "692d7e14464c05be225829749cbd585624bbf78190fec0cc7396a9642cbe7dc7"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/mberwanger/demux-proxy/releases/download/v0.1.0/demux-proxy_0.1.0_Darwin_arm64.tar.gz"
-    sha256 "ffcf9836b11e8a28cce797993a1bc4b0f33b5d06eb7f2c5b9c6df25625741456"
+    url "https://github.com/mberwanger/demux-proxy/releases/download/v0.2.0/demux-proxy_0.2.0_Darwin_arm64.tar.gz"
+    sha256 "32fca26b834156e9153b78fbe77558cdb806a0db12c30d51e8eb99956c7d83fb"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/mberwanger/demux-proxy/releases/download/v0.1.0/demux-proxy_0.1.0_Linux_x86_64.tar.gz"
-    sha256 "73bd3be95ce5c8967b7888ed46c45d5552f5c8998e2b520c0cf7667370845eca"
+    url "https://github.com/mberwanger/demux-proxy/releases/download/v0.2.0/demux-proxy_0.2.0_Linux_x86_64.tar.gz"
+    sha256 "a6b87051ee00ca029b41e89dc12249b9ec55d70edbc66bcc99dea498a4d2c669"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/mberwanger/demux-proxy/releases/download/v0.1.0/demux-proxy_0.1.0_Linux_armv6.tar.gz"
-    sha256 "f084c39def2f0d57559c360eb0359fb5c682e63a2a8770a52821940b4222be02"
+    url "https://github.com/mberwanger/demux-proxy/releases/download/v0.2.0/demux-proxy_0.2.0_Linux_armv6.tar.gz"
+    sha256 "1a54e2717781931ef8ce4cddcac9ecb9e22a1b06b7de29497f6d073b94cb44e8"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/mberwanger/demux-proxy/releases/download/v0.1.0/demux-proxy_0.1.0_Linux_arm64.tar.gz"
-    sha256 "1a083e0be6398a881b90db12299222efc9512f91f9aa8fcbacfdf10e1cc4c2de"
+    url "https://github.com/mberwanger/demux-proxy/releases/download/v0.2.0/demux-proxy_0.2.0_Linux_arm64.tar.gz"
+    sha256 "b03b6441cdb9683454d7666149d598d17b00a3de3d1816fdd4d8b3fab73c2a0e"
   end
 
   depends_on "go"
