@@ -10,23 +10,23 @@ class DemuxProxy < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/mberwanger/demux-proxy/releases/download/v0.1.0/demux-proxy_0.1.0_Darwin_x86_64.tar.gz"
-    sha256 "735c1aaca76e6d94b975a00c03cde3ce62f29ade2f18b5799d0546f94704db2a"
+    sha256 "4e9a726e96e9fb5d7cb63679614cb4efec9662aac1767ce0a860fe03b04ff40f"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/mberwanger/demux-proxy/releases/download/v0.1.0/demux-proxy_0.1.0_Darwin_arm64.tar.gz"
-    sha256 "0bae962c77462f81cafda5f20e6ad92288f9b231f66113a1ba1e5bf84b989292"
+    sha256 "ffcf9836b11e8a28cce797993a1bc4b0f33b5d06eb7f2c5b9c6df25625741456"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/mberwanger/demux-proxy/releases/download/v0.1.0/demux-proxy_0.1.0_Linux_x86_64.tar.gz"
-    sha256 "9bbd33fe67376bfe194f6d33beb114d128b9c175f12390a0ef8f4583c4b94d93"
+    sha256 "73bd3be95ce5c8967b7888ed46c45d5552f5c8998e2b520c0cf7667370845eca"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
     url "https://github.com/mberwanger/demux-proxy/releases/download/v0.1.0/demux-proxy_0.1.0_Linux_armv6.tar.gz"
-    sha256 "8dd4afb808f3d0075c1c595b0394a8851526a64ee3b72727eb090802d8077614"
+    sha256 "f084c39def2f0d57559c360eb0359fb5c682e63a2a8770a52821940b4222be02"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/mberwanger/demux-proxy/releases/download/v0.1.0/demux-proxy_0.1.0_Linux_arm64.tar.gz"
-    sha256 "61e6c134b64b46a6d3d02655c96ccfa34f03ea4a4354822f7ade24c241786227"
+    sha256 "1a083e0be6398a881b90db12299222efc9512f91f9aa8fcbacfdf10e1cc4c2de"
   end
 
   depends_on "go"
