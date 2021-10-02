@@ -12,26 +12,26 @@ class Updog < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mberwanger/updog/releases/download/v0.0.1/updog_darwin_x86_64.tar.gz"
-      sha256 "694f67b3536d8e83c2f94a60a2906691e562ac76228391109b96f428b29a8658"
+      sha256 "e4581e93629b093f46d65fbbf5eaddb1e49b4c67854c3274873a284378635a8a"
     end
     if Hardware::CPU.arm?
       url "https://github.com/mberwanger/updog/releases/download/v0.0.1/updog_darwin_arm64.tar.gz"
-      sha256 "df937d02b642faa36b7710cd3fc054f9c18640cb16029942605a17d8dd32eb2d"
+      sha256 "7c6366c67f33306ab387befe750673659dd6f745df514230d58424eb78b84df8"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/mberwanger/updog/releases/download/v0.0.1/updog_linux_x86_64.tar.gz"
-      sha256 "b944948d9ea26c867546df6a4d83ea0d2078d16ba15781860c8fd226c81d277b"
+      sha256 "92200c9eaca1bb2e64126f8e9ea6e5ddb7502cae2e4e296e84b6d53700073263"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/mberwanger/updog/releases/download/v0.0.1/updog_linux_armv6.tar.gz"
-      sha256 "4df03ed580784e7aa8a1f5527397577056f167c34113d1ee1c33d7407eafdcb4"
+      sha256 "6c72bce97c4afa25d43b3c32898505042da97e7dc456cd0d3de31559e6a6e37f"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mberwanger/updog/releases/download/v0.0.1/updog_linux_arm64.tar.gz"
-      sha256 "c834ed6f2a88cdcf5d74fd5544fb72d986f385acdb8a303b14d26039ad11e6c5"
+      sha256 "218ba7ecd1aa2656a7209b8102cd574a483fc777e95e11482ba62f0fbb8f3740"
     end
   end
 
